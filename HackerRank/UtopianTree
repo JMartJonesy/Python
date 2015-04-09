@@ -1,0 +1,13 @@
+# Jesse Martinez
+# Utopian Tree
+
+import sys
+
+for test in range( int( sys.stdin.readline() ) ):
+	tree = 1
+	for cycle in range( int( sys.stdin.readline() ) ):
+		if cycle % 2 == 0:
+			tree *= 2
+		else:
+			tree += 1
+	print( tree )
